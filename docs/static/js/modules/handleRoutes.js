@@ -15,6 +15,10 @@ const routes = {
         route: "/",
         handler: Home,
     },{
+        title: "The store",
+        route: "/web-store-app/",
+        handler: Home,
+    }{
         title: "Electronics",
         route: "/electronics",
         handler: Catagories,
