@@ -44,7 +44,7 @@ const routes = {
         handler: Product
     },{
         title: "Login",
-        route: "/login",
+        route: "/lgn",
         handler: Login
     },{
         title: "My Account",
