@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script type="text/javascript">
+        // Single Page Apps for GitHub Pages
+        // MIT License
+        // https://github.com/rafgraph/spa-github-pages
+        // This script checks to see if a redirect is present in the query string,
+        // converts it back into the correct url and adds it to the
+        // browser's history using window.history.replaceState(...),
+        // which won't cause the browser to attempt to load the new url.
+        // When the single page app is loaded further down in this file,
+        // the correct url will be waiting in the browser's history for
+        // the single page app to route accordingly.
+        (function(l) {
+          if (l.search[1] === '/' ) {
+            var decoded = l.search.slice(1).split('&').map(function(s) { 
+              return s.replace(/~and~/g, '&')
+            }).join('?');
+            window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+            );
+          }
+        }(window.location))
+      </script> -->
+    <script type="module" src="/static/js/main.js"></script>
+      <link rel="stylesheet" href="/static/css/style.css">
+    <title>The store</title>
+   
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="/" class="link-container logo">{LOGO}</a>
+
+        <ul class="nav-store-container">
+            <li class="link-container nav-catagory">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-catagory dropdown-container">
+                <div class="store-link">Store</div>
+                <div class="nav-dropdown-container">
+                    <div class="nav-dropdown">
+                        <div class="link-container electronics-catagory">
+                            <a class="nav-link" href="/electronics"  class="nav-product-catagory">Electronics</a>
+                        </div>
+                        <div class="link-container jewelery-catagory">
+                            <a class="nav-link" href="/jewelery" class="nav-product-catagory">Jewelery</a>
+                        </div>
+                        <div class="link-container mens-clothing-catagory">
+                            <a class="nav-link" href="/mens-clothing" class="nav-product-catagory">Men's clothing</a>
+                        </div>
+                        <div class="link-container womens-clothing-catagory">
+                            <a class="nav-link" href="/womens-clothing" class="nav-product-catagory">Women's clothing</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="link-container nav-catagory">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="link-container nav-catagory">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+        </ul>
+
+        <div class="nav-account-container nav-end">
+            <div class="link-container">
+                <a class="nav-link" href="/checkout">🛒 Cart</a>
+            </div>
+            <div class="link-container account-link hidden">
+                <a class="nav-link" href="/account">Account</a>
+            </div>
+            <div class="link-container ">
+                <a class="login-logout nav-link" href="/login">Login</a>
+            </div>
+        </div>
+    </nav>
+    <div id="content-container-all">
+        <div id="content-container">
+            
+        </div>
+    </div>
+    <footer>
+        <nav class="nav-to-top">Back to top</nav>
+        <div class="newsletter-container">
+                <p class="flex-center">Sign up for our newsletter:</p>
+                <span class="signup-form input-custom">
+                    <input class="input-one" type="email" id="email-form-newsletter" autocomplete="off">
+                    <label for="email-form-newsletter">Email address</label>
+                </span>
+                <button>Subscribe</button>
+        </div>
+        <div class="footer-nav-links-container">
+            <span class="links-column">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="/">Link</a></li>
+                    <li><a href="/">Link</a></li>
+                    <li><a href="/">Link</a></li>
+                </ul>
+            </span>
+            <span class="links-column">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="/">Link</a></li>
+                    <li><a href="/">Link</a></li>
+                    <li><a href="/">Link</a></li>     
+                </ul>
+            </span>
+            <span class="links-column">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="/">Link</a></li>
+                    <li><a href="/">Link</a></li>
+                    <li><a href="/">Link</a></li>
+                </ul>
+            </span>
+        </div>
+        <div class="copyright-container">Design stolen from @DevDrawer...</div>
+    </footer>
+</body>
+</html>
